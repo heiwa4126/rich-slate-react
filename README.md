@@ -1,4 +1,4 @@
-# rich-tinymce-react
+# rich-slate-react
 
-[tinymce - npm](https://www.npmjs.com/package/tinymce)
+[slate-react - npm](https://www.npmjs.com/package/slate-react)
 のテスト
