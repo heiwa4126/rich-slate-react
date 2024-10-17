@@ -31,6 +31,7 @@ export default defineConfig({
 					// u: ["color", "date-fns"],
 					// r: ["react", "react-dom", "react-router-dom"],
 					r: ["react-router-dom"],
+					s: ["slate", "slate-history", "slate-react"],
 					// p: ["pptxgenjs"],
 				},
 			},

@@ -15,6 +15,37 @@ function App() {
 	);
 }
 
+export const Template1: React.FC<
+	React.PropsWithChildren<{
+		title: string;
+	}>
+> = ({ title, children }) => {
+	return (
+		<div className="p-3">
+			<article className="mb-5 leading-relaxed">
+				<h1 className="text-3xl font-bold mt-3 mb-5">{title}</h1>
+				{children}
+			</article>
+			<nav className="mt-5">
+				<Links />
+			</nav>
+		</div>
+	);
+};
+
+export const Aa = ({ txt }: { txt: string }) => {
+	return (
+		<a
+			href={`https://github.com/ianstormtaylor/slate/blob/main/site/examples/ts/${txt}`}
+			className="a1"
+			target="_blank"
+			rel="noopener noreferrer"
+		>
+			slate/site/examples/ts/{txt}
+		</a>
+	);
+};
+
 export function Links() {
 	return (
 		<ol reversed className="list-decimal list-inside">
