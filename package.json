@@ -1,0 +1,37 @@
+{
+	"name": "rich-tinymce-react",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"license": "MIT",
+	"scripts": {
+		"dev": "vite",
+		"build": "tsc -b && vite build",
+		"preview": "vite preview",
+		"format": "biome format --write . && dprint fmt",
+		"check": "biome check --write . && dprint check",
+		"trivy:check": "trivy fs . && trivy config .",
+		"trivy:license": "trivy fs --scanners license --severity HIGH,CRITICAL .",
+		"license": "license-checker --csv | awk -F, 'BEGIN {OFS=\",\"} {temp=$2; $2=$3; $3=temp; print}' > tmp-license.csv"
+	},
+	"dependencies": {
+		"react": "^18.3.1",
+		"react-dom": "^18.3.1",
+		"react-router-dom": "^6.27.0"
+	},
+	"devDependencies": {
+		"@jridgewell/sourcemap-codec": "^1.5.0",
+		"@types/node": "^22.7.6",
+		"@types/react": "^18.3.11",
+		"@types/react-dom": "^18.3.1",
+		"@types/react-router-dom": "^5.3.3",
+		"@vitejs/plugin-react-swc": "^3.7.1",
+		"autoprefixer": "^10.4.20",
+		"postcss": "^8.4.47",
+		"tailwindcss": "^3.4.14",
+		"typescript": "^5.6.3",
+		"vite": "^5.4.9",
+		"vite-plugin-cdn-import": "^1.0.1"
+	},
+	"packageManager": "pnpm@9.12.0+sha512.4abf725084d7bcbafbd728bfc7bee61f2f791f977fd87542b3579dcb23504d170d46337945e4c66485cd12d588a0c0e570ed9c477e7ccdd8507cf05f3f92eaca"
+}
