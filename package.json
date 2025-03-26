@@ -20,7 +20,7 @@
 		"react-router-dom": "^6.30.0",
 		"slate": "^0.110.2",
 		"slate-history": "^0.109.0",
-		"slate-react": "^0.110.3"
+		"slate-react": "^0.112.1"
 	},
 	"devDependencies": {
 		"@jridgewell/sourcemap-codec": "^1.5.0",
