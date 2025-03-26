@@ -9,7 +9,7 @@ function App() {
 				<Route path="/" element={<App1 />} />
 				<Route path="/index.html" element={<App1 />} />
 				{/* ↑デフォルトアプリ */}
-				<Route path="/3" element={<App1 />} />
+				<Route path="/1" element={<App1 />} />
 			</Routes>
 		</>
 	);
